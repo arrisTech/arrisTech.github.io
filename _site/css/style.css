@@ -204,7 +204,7 @@
 		input[type="password"]:focus,
 		input[type="email"]:focus,
 		textarea:focus {
-			border-color: #EEC2D1;
+			border-color: #000000;
 		}
 
 	input[type="text"],
@@ -531,8 +531,8 @@
 		input[type="submit"].special,
 		input[type="reset"].special,
 		.button.special {
-			background: #EEC2D1;
-			border-color: #EEC2D1;
+			background: #000000;
+			border-color: #000000;
 			color: white !important;
 		}
 
@@ -540,8 +540,8 @@
 			input[type="submit"].special:hover,
 			input[type="reset"].special:hover,
 			.button.special:hover {
-				background: #EEC2D1 !important;
-				border-color: #EEC2D1 !important;
+				background: #000000 !important;
+				border-color: #000000 !important;
 			}
 
 		input[type="button"].fit,
@@ -572,7 +572,7 @@
 		}
 
 		.wrapper.style2 {
-			background-color: #EEC2D1;
+			background-color: #000000;
 			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
@@ -587,7 +587,7 @@
 			.wrapper.style2 .button.special {
 				background: white;
 				border-color: white;
-				color: #EEC2D1 !important;
+				color: #000000 !important;
 			}
 
 				.wrapper.style2 .button.special:hover {
@@ -786,7 +786,7 @@
 			}
 
 			.dropotron > li:hover > a {
-				background: #EEC2D1;
+				background: #000000;
 				color: white;
 			}
 
@@ -801,10 +801,28 @@
 	@-ms-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
 	@keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
 
+
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
+		/*background-color: #645862;*/
+		background-color: #000000;
+		/*background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../images/banner.jpg");*/
+		background-image: url("../images/banner.jpg");
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: white;
+		cursor: default;
+		padding: 6em 0;
+		text-align: center;
+	}
+
+	/*#banner {
+		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
+		background-color: #000000;
 		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../images/banner.jpg");
+		background-image: url(""), url("../images/banner.jpg");
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
@@ -812,7 +830,7 @@
 		cursor: default;
 		padding: 6em 0;
 		text-align: center;
-	}
+	}*/
 
 		#banner .inner {
 			-moz-animation: reveal-banner 1s 0.25s ease-in-out;
@@ -825,7 +843,8 @@
 			-o-animation-fill-mode: forwards;
 			-ms-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
-			background: rgba(52, 27, 43, 0.5);
+			/*background: rgba(52, 27, 43, 0.5);*/
+			background: rgba(40, 40, 40, 0.75);
 			color: white;
 			display: inline-block;
 			opacity: 0;
